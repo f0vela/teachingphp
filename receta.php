@@ -30,7 +30,7 @@ $comentarios = $conn->query("SELECT * FROM comentarios WHERE receta = $id");
 foreach ($comentarios as $r) {
 ?>
 
-	<div style="border:1px solid #a9a9a9; padding:10px; margin: 5px 5px 10px 5px;">
+	<div style="border:2px solid #938475; border-radius: 10px; padding:10px; margin: 5px 5px 10px 5px;">
 		<p><?php echo $r['comentario']; ?></p>
 		<small><?php echo $r['fecha'];?></small>
 	</div>
